@@ -7,7 +7,7 @@
 #include "uint256.h"
 
 #define BITCOIN_SEED_NONCE  0x0539a019ca550825
-#define REQUIRE_HEIGHT 142000
+#define REQUIRE_HEIGHT 6000
 #define MIN_VERSION 40000
 
 using namespace std;
@@ -80,7 +80,7 @@ class CNode {
     CAddress me(CService("0.0.0.0"));
     BeginMessage("version");
     int nBestHeight = REQUIRE_HEIGHT;
-    string ver = "/novacoin-seeder:0.01/";
+    string ver = "/Kushcoin:1.0.0.2/";
     vSend << PROTOCOL_VERSION << nLocalServices << nTime << you << me << nLocalNonce << ver << nBestHeight;
     EndMessage();
   }

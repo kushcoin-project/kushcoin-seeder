@@ -399,8 +399,7 @@ int main(int argc, char **argv) {
   vSeeds.reserve(vSeeds.size() + opts.vSeeds.size());
   vSeeds.insert(vSeeds.end(), opts.vSeeds.begin(), opts.vSeeds.end());
   if (opts.vSeeds.empty()) {
-    vSeeds.push_back("novacoin.ru");
-    vSeeds.push_back("itzod.ru");
+    vSeeds.push_back("seed-b.kushcoin.co");
   }
   if (opts.tor) {
     CService service(opts.tor, 9050);
